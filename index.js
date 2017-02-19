@@ -22,6 +22,7 @@ let componentIndex = 0;
 
 const propTypes = {
     data: PropTypes.array,
+    open: PropTypes.bool,
     onChange: PropTypes.func,
     initValue: PropTypes.string,
     style: View.propTypes.style,
@@ -39,6 +40,7 @@ const propTypes = {
 
 const defaultProps = {
     data: [],
+    open: false,
     onChange: ()=> {},
     initValue: 'Select me!',
     style: {},
@@ -84,6 +86,7 @@ export default class ModalPicker extends BaseComponent {
       if (nextProps.initValue != this.props.initValue) {
         this.setState({selected: nextProps.initValue});
       }
+      this.setState({modalVisible: nextProps.open});
     }
 
     onChange(item) {
