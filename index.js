@@ -144,7 +144,7 @@ export default class ModalPicker extends BaseComponent {
             <View style={[styles.overlayStyle, this.props.overlayStyle]} key={'modalPicker'+(componentIndex++)}>
                 <TouchableOpacity style={styles.overlayCloseButton} onPress={this.close}></TouchableOpacity>
                 <View style={[styles.optionContainer, this.props.optionContainerStyle]}>
-                    <ScrollView keyboardShouldPersistTaps>
+                    <ScrollView>
                         <View style={{paddingHorizontal:10}}>
                             {options}
                         </View>
