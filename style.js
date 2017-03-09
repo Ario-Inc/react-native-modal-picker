@@ -37,8 +37,7 @@ export default StyleSheet.create({
     },
 
     cancelContainer: {
-        left:width*0.1,
-        top:(height-OPTION_CONTAINER_HEIGHT)/2 + 10
+        alignSelf: 'center'
     },
 
     selectStyle: {
