@@ -31,9 +31,9 @@ export default StyleSheet.create({
         flexShrink: 1,
         marginBottom: 8,
         padding: PADDING,
-        // backgroundColor:'rgba(255,255,255,0.8)',
-        left:width*0.1,
-        top:(height-OPTION_CONTAINER_HEIGHT)/2
+        backgroundColor:'rgba(255,255,255,0.8)',
+        // left:width*0.1,
+        // top:(height-OPTION_CONTAINER_HEIGHT)/2
     },
 
     cancelContainer: {
